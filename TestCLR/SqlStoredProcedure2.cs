@@ -15,7 +15,7 @@ public partial class StoredProcedures
         {
             sqlConnection = new SqlConnection("context connection=true");
             sqlConnection.Open();
-            sqlCommand = new SqlCommand("INSERT INTO [dbo].[ParamTable] ([SourceFile]) VALUES('MySourceFile2')", sqlConnection);
+            sqlCommand = new SqlCommand("INSERT INTO [dbo].[ParamTable] ([SourceFile]) VALUES('YourSourceFile3')", sqlConnection);
             SqlContext.Pipe.ExecuteAndSend(sqlCommand);
         }
         catch (Exception)
