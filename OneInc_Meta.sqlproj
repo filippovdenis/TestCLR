@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>OneInc_Meta</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{d93a5703-1422-4028-b105-660ef147bb82}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>OneInc_Meta</RootNamespace>
+    <AssemblyName>OneInc_Meta</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <AnsiNulls>True</AnsiNulls>
+    <QuotedIdentifier>True</QuotedIdentifier>
+    <QueryStoreCaptureMode>All</QueryStoreCaptureMode>
+    <QueryStoreDesiredState>Off</QueryStoreDesiredState>
+    <QueryStoreFlushInterval>900</QueryStoreFlushInterval>
+    <QueryStoreStatsInterval>60</QueryStoreStatsInterval>
+    <QueryStoreMaxPlansPerQuery>200</QueryStoreMaxPlansPerQuery>
+    <QueryStoreStaleQueryThreshold>367</QueryStoreStaleQueryThreshold>
+    <QueryStoreMaxStorageSize>100</QueryStoreMaxStorageSize>
+    <DbScopedConfigLegacyCardinalityEstimation>Off</DbScopedConfigLegacyCardinalityEstimation>
+    <DbScopedConfigMaxDOP>0</DbScopedConfigMaxDOP>
+    <DbScopedConfigParameterSniffing>On</DbScopedConfigParameterSniffing>
+    <DbScopedConfigOptimizerHotfixes>Off</DbScopedConfigOptimizerHotfixes>
+    <DelayedDurability>DISABLED</DelayedDurability>
+    <AutoCreateStatisticsIncremental>False</AutoCreateStatisticsIncremental>
+    <MemoryOptimizedElevateToSnapshot>False</MemoryOptimizedElevateToSnapshot>
+    <Containment>None</Containment>
+    <IsNestedTriggersOn>True</IsNestedTriggersOn>
+    <IsTransformNoiseWordsOn>False</IsTransformNoiseWordsOn>
+    <TwoDigitYearCutoff>2049</TwoDigitYearCutoff>
+    <NonTransactedFileStreamAccess>OFF</NonTransactedFileStreamAccess>
+    <TargetRecoveryTimePeriod>0</TargetRecoveryTimePeriod>
+    <TargetRecoveryTimeUnit>SECONDS</TargetRecoveryTimeUnit>
+    <IsChangeTrackingOn>True</IsChangeTrackingOn>
+    <IsChangeTrackingAutoCleanupOn>True</IsChangeTrackingAutoCleanupOn>
+    <ChangeTrackingRetentionPeriod>14</ChangeTrackingRetentionPeriod>
+    <ChangeTrackingRetentionUnit>Days</ChangeTrackingRetentionUnit>
+    <IsEncryptionOn>False</IsEncryptionOn>
+    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
+    <Trustworthy>True</Trustworthy>
+    <AutoUpdateStatisticsAsynchronously>False</AutoUpdateStatisticsAsynchronously>
+    <PageVerify>CHECKSUM</PageVerify>
+    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
+    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
+    <Parameterization>SIMPLE</Parameterization>
+    <AllowSnapshotIsolation>False</AllowSnapshotIsolation>
+    <ReadCommittedSnapshot>False</ReadCommittedSnapshot>
+    <VardecimalStorageFormatOn>True</VardecimalStorageFormatOn>
+    <SupplementalLoggingOn>False</SupplementalLoggingOn>
+    <CompatibilityMode>130</CompatibilityMode>
+    <AnsiNullDefault>False</AnsiNullDefault>
+    <AnsiPadding>True</AnsiPadding>
+    <AnsiWarnings>True</AnsiWarnings>
+    <ArithAbort>True</ArithAbort>
+    <ConcatNullYieldsNull>True</ConcatNullYieldsNull>
+    <NumericRoundAbort>False</NumericRoundAbort>
+    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
+    <DatabaseChaining>False</DatabaseChaining>
+    <DatabaseState>ONLINE</DatabaseState>
+    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
+    <DefaultCursor>GLOBAL</DefaultCursor>
+    <AutoClose>False</AutoClose>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <AutoShrink>False</AutoShrink>
+    <AutoUpdateStatistics>True</AutoUpdateStatistics>
+    <TornPageDetection>False</TornPageDetection>
+    <DatabaseAccess>MULTI_USER</DatabaseAccess>
+    <Recovery>SIMPLE</Recovery>
+    <EnableFullTextSearch>True</EnableFullTextSearch>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <CreateProjectFromDatabaseCompleted>True</CreateProjectFromDatabaseCompleted>
+    <PermissionSet>UNSAFE</PermissionSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="CLR" />
+    <Folder Include="Assemblies" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assemblies\Microsoft.AnalysisServices.AdomdClient.dll" />
+    <None Include="Assemblies\Microsoft.AnalysisServices.SPClient.Interfaces.dll" />
+    <None Include="Assemblies\Microsoft.AnalysisServices.Xmla.dll" />
+    <None Include="Assemblies\OLAPExtensions.dll" />
+    <None Include="Assemblies\SMDiagnostics.dll" />
+    <None Include="Assemblies\System.Drawing.dll" />
+    <None Include="Assemblies\System.Runtime.Serialization.dll" />
+    <None Include="Assemblies\System.ServiceModel.Internals.dll" />
+    <None Include="Assemblies\System.DirectoryServices.Protocols.dll" />
+    <None Include="Assemblies\System.DirectoryServices.AccountManagement.dll" />
+    <None Include="Assemblies\System.DirectoryServices.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLR\DateFunctions.cs" />
+    <Compile Include="CLR\OneIncDirectoryServices.cs" />
+    <Compile Include="CLR\OneIncOLAPExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="SSAS_Server">
+      <DefaultValue>LAB-PROC1-DEV02</DefaultValue>
+      <Value>$(SqlCmdVar__2)</Value>
+    </SqlCmdVariable>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="Microsoft.AnalysisServices.AdomdClient">
+      <HintPath>Assemblies\Microsoft.AnalysisServices.AdomdClient.dll</HintPath>
+      <SqlPermissionSet>UNSAFE</SqlPermissionSet>
+      <SqlOwnerName>dbo</SqlOwnerName>
+      <IsModelAware>True</IsModelAware>
+    </Reference>
+    <Reference Include="Microsoft.AnalysisServices.SPClient.Interfaces">
+      <HintPath>Assemblies\Microsoft.AnalysisServices.SPClient.Interfaces.dll</HintPath>
+      <SqlPermissionSet>UNSAFE</SqlPermissionSet>
+      <SqlOwnerName>dbo</SqlOwnerName>
+      <IsModelAware>True</IsModelAware>
+    </Reference>
+    <Reference Include="Microsoft.AnalysisServices.Xmla">
+      <HintPath>Assemblies\Microsoft.AnalysisServices.Xmla.dll</HintPath>
+      <SqlPermissionSet>UNSAFE</SqlPermissionSet>
+      <SqlOwnerName>dbo</SqlOwnerName>
+      <IsModelAware>True</IsModelAware>
+    </Reference>
+    <Reference Include="OLAPExtensions">
+      <HintPath>Assemblies\OLAPExtensions.dll</HintPath>
+      <SqlPermissionSet>UNSAFE</SqlPermissionSet>
+      <SqlOwnerName>dbo</SqlOwnerName>
+      <IsModelAware>True</IsModelAware>
+    </Reference>
+    <Reference Include="SMDiagnostics">
+      <HintPath>Assemblies\SMDiagnostics.dll</HintPath>
+      <SqlPermissionSet>UNSAFE</SqlPermissionSet>
+      <SqlOwnerName>dbo</SqlOwnerName>
+      <IsModelAware>True</IsModelAware>
+    </Reference>
+    <Reference Include="System.DirectoryServices.AccountManagement">
+      <HintPath>Assemblies\System.DirectoryServices.AccountManagement.dll</HintPath>
+      <SqlPermissionSet>UNSAFE</SqlPermissionSet>
+      <SqlOwnerName>dbo</SqlOwnerName>
+      <IsModelAware>True</IsModelAware>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <HintPath>Assemblies\System.DirectoryServices.dll</HintPath>
+      <SqlPermissionSet>UNSAFE</SqlPermissionSet>
+      <SqlOwnerName>dbo</SqlOwnerName>
+      <IsModelAware>True</IsModelAware>
+    </Reference>
+    <Reference Include="System.DirectoryServices.Protocols">
+      <HintPath>Assemblies\System.DirectoryServices.Protocols.dll</HintPath>
+      <SqlPermissionSet>UNSAFE</SqlPermissionSet>
+      <SqlOwnerName>dbo</SqlOwnerName>
+      <IsModelAware>True</IsModelAware>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>Assemblies\System.Drawing.dll</HintPath>
+      <SqlPermissionSet>UNSAFE</SqlPermissionSet>
+      <SqlOwnerName>dbo</SqlOwnerName>
+      <IsModelAware>True</IsModelAware>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>Assemblies\System.Runtime.Serialization.dll</HintPath>
+      <SqlPermissionSet>UNSAFE</SqlPermissionSet>
+      <SqlOwnerName>dbo</SqlOwnerName>
+      <IsModelAware>True</IsModelAware>
+    </Reference>
+    <Reference Include="System.ServiceModel.Internals">
+      <HintPath>Assemblies\System.ServiceModel.Internals.dll</HintPath>
+      <SqlPermissionSet>UNSAFE</SqlPermissionSet>
+      <SqlOwnerName>dbo</SqlOwnerName>
+      <IsModelAware>True</IsModelAware>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y $(TargetFileName) "..\..\..\OneInc.ProcessOne.Databases.Liquibase\assemblies"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

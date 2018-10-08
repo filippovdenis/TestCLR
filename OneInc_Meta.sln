@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "OneInc_Meta", "OneInc_Meta.sqlproj", "{D93A5703-1422-4028-B105-660EF147BB82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D93A5703-1422-4028-B105-660EF147BB82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D93A5703-1422-4028-B105-660EF147BB82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D93A5703-1422-4028-B105-660EF147BB82}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D93A5703-1422-4028-B105-660EF147BB82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D93A5703-1422-4028-B105-660EF147BB82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D93A5703-1422-4028-B105-660EF147BB82}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27A389E1-0E13-4835-A085-84B07F549815}
+	EndGlobalSection
+EndGlobal
